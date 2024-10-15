@@ -36,16 +36,6 @@ public class IndicatorController {
 
     @PutMapping("/{id}")
     public Indicator updateIndicator(@PathVariable Long id, @RequestBody Indicator indicatorBody) {
-        /*Indicator existingIndicator = indicatorRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Indicator not exist with id: " + id));
-
-        existingIndicator.setName(indicatorBody.getName());
-        existingIndicator.setType(indicatorBody.getType());
-        existingIndicator.setDescription(indicatorBody.getDescription());
-        existingIndicator.setGoal(indicatorBody.getGoal());
-        existingIndicator.setMinimum(indicatorBody.getMinimum());
-        existingIndicator.setMaximum(indicatorBody.getMaximum());*/
-
         return indicatorRepository.save(indicatorBody);
     }
 

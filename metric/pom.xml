@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.api</groupId>
-	<artifactId>metric</artifactId>
+	<artifactId>api_metric</artifactId>
 	<version>0.0.1</version>
-	<name>metric</name>
+	<name>api_metric</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

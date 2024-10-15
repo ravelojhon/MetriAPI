@@ -1,22 +1,32 @@
 package com.api.metric.model;
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import lombok.Data;
 
 @Data
 @Entity
+@Table(name = "indicator")
 public class Indicator {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long indicatorID;
+    private Long indicatorid;
+
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "type")
     private String type;
+
+    @Column(name = "description")
     private String description;
+
+    @Column(name = "goal")
     private double goal;
+
+    @Column(name = "minimum")
     private double minimum;
+
+    @Column(name = "maximum")
     private double maximum;
 }
 
