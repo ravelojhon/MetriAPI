@@ -1,0 +1,7 @@
+com\api\metric\MetricApplication$Myconfiguration.class
+com\api\metric\exception\ResourceNotFoundException.class
+com\api\metric\MetricApplication.class
+com\api\metric\repository\IndicatorRepository.class
+com\api\metric\controller\IndicatorController.class
+com\api\metric\MetricApplication$Myconfiguration$1.class
+com\api\metric\model\Indicator.class
